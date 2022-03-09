@@ -1,9 +1,7 @@
 import flask
 import os
-import requests
 import config
 from apprise import Apprise
-import asyncio
 
 apprise = Apprise()
 apprise.add(config.TGRAM_URL, tag="tgram")
